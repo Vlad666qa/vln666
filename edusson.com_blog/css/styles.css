@@ -1,0 +1,289 @@
+*{
+	margin: 0;
+	/*border: .1px solid black;*/
+}
+html{
+    font: 400 16px/1.5714 Roboto,sans-serif;
+}
+a{
+	text-decoration:none;
+}
+header{
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	padding:10px 0;
+}
+header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	width: 1170px;
+	padding: 0 15px;
+	margin:0 auto;
+}
+.menu{
+	float:right;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: transparent;
+	text-align: right;
+	color: white;
+	padding:10px;
+}
+.logo{
+	float:left;
+	
+}
+.menu a{
+	color:white;
+	text-decoration:none;
+	font-weight:500;
+	font-size:16px;
+}
+#nav_items{
+	justify-content:space-between;
+	padding-left:15px;
+	font-size:16px;
+}
+.menu ul{
+	display:flex;
+	list-style-type:none;
+}
+.menu li{
+	margin-right:55px;
+}
+.menu button{
+	border:2px solid white;
+    border-radius:10px;
+	padding: 10px 23px;
+	margin-left: 55px;
+	background:transparent;
+	color:white;
+}
+.header_background_and_text{
+	text-align:center;
+	padding:70px;
+	color: #fff;
+	font-weight: 700;
+	background: linear-gradient(to right, #0084d6, #00cf8a);
+}
+.header_background_and_text h1{
+	font-size: 48px;
+}
+.header_background_and_text p{
+	font-size: 20px;
+}
+.post_nav{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.post_nav ul{
+	justify-content:center;
+	display:flex;
+	padding:0;
+}
+.post_nav li{
+	padding:21px 22px;
+	list-style-type:none;
+	font-size: 16px;
+    font-weight: 500;
+}
+.post_nav a{
+	color:#213f52;
+	text-decoration:none;
+}
+.search {
+	padding:22px 0 24px 30px;
+}
+.search a{
+	align-items: center;
+	padding-top:24px;
+}
+.nav{
+	padding:0;
+	width:100%;
+	background-color:#f5f8fa;
+}
+.box{
+	width:360px;
+	margin:15px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Параметры тени */
+	border-radius:10px;
+	transition-duration: .6s;
+}
+.box:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.8); /* Параметры тени */
+
+}
+.boxes{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+.box_title{
+	display:flex;
+	justify-content:center;
+	font-size:14px;
+	margin:18px 25px;
+	width:76px;
+	height:26px;
+	background-color:#f5f8fa;
+	align-items:center;
+}
+.box a{
+	text-decoration:none;
+	color:#213f52;
+	font-weight: 300;
+}
+.box h3{
+	padding:0px 25px 15px 25px;
+	text-decoration:none;
+	font-size:22px;
+	color:#213f52;
+}
+
+.pagination{
+	padding:50px 0;
+}
+.pagination ul{
+	display:flex;
+	list-style-type:none;
+	justify-content:center;
+}
+.pagination li{
+	margin:0 5px;
+
+}
+.pagination a{
+	text-decoration:none;
+	color:#213f52;
+	width:25px;
+	padding:25px;
+		border:1px solid transparent;
+}
+.pagenumber{
+	font-size:14px;
+}
+.pagenumber:hover{
+
+	border:1px solid #00cf8a;
+}
+.none:hover{
+	padding:0px;
+	border:0;
+}
+.banner{
+	width:100%;
+	background-color:#f5f8fa;
+	margin:0;
+	justify-content:space-between;
+}
+.section_elements{
+	display:flex;
+	justify-content:space-between;
+}
+.left_side{
+	flex-basis:592px;
+	padding:100px 0;
+}
+.left_side p{
+	padding:15px 0;
+	font-size:16px;
+}
+.right_side img{
+	padding:50px 0;
+	align-items:center;
+}
+/*Form*/
+.form_input_block{
+	position: relative;
+	width:485px;
+	margin:25px 0px;
+}
+.input_field{
+	width: 100%;
+	height:52px;
+	border-radius:10px;
+	border:0;
+	box-shadow: 0px 6px 8px 2px rgba(0,0,0,0.2);
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.placeholder{
+	padding-left:5px;
+}
+.input_field:active{
+	text-decoration:none;
+}
+.subscribe_button{
+	top: 6px;
+	right: 10px;
+	position: absolute;
+	font-size:16px;
+	color:white;
+	background-color:#ff7b59;
+	line-height:36px;
+	border:2px solid transparent;
+	border-radius:10px;
+	padding:0 25px;
+}
+.subscribe_button:hover{
+	background-color:red;
+}
+.footer{
+	display:flex;
+	padding:50px 0;
+	align-items:flex-start;
+}
+.logo_at_footer{
+	flex-basis: 126px;
+	padding-right:40px;
+}
+.footer_block{
+ background-color:#00385e;
+ width:100%;
+}
+.nav_footer{
+	padding:0 25px;
+	border-left:1px solid white;
+	border-right:1px solid white; 
+}
+.nav_footer ul{
+	display:flex;
+	list-style-type:none;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.nav_footer li{
+	width: 25%;
+}
+.nav_footer a{
+	color:white;
+}
+.nav_footer h3{
+	color:white;
+}
+.social{
+	color:white;
+	padding-left:25px; 
+	flex-basis:230px;
+	align-items: center;
+}
+.social_icons{
+	width:230px;
+}
+.social_icons ul{
+	display: flex;
+	list-style-type:none;
+}
+.social_icons li{
+	margin: 0 1.5%;
+}
+.social_icons a{
+	
+}
